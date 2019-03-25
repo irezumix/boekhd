@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+    background: #fafafa;
+}
+
+/*TYPOGRAFIE*/
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.inc_bg {
+    background: #bae3bd;
+}
+
+.out_bg {
+    background: rgba(255, 51, 51, 0.397);
+}
+
+/*ALL PAGES TOP*/
+
+.container-full-width {
+    width: 100%;
+}
+
+nav a:link {
+    color: #5496A3;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #5496A3;
+    text-decoration: none;
+}
+
+nav a i {
+    font-size: 25px;
+    padding: 10px;
+}
+
+nav a:nth-child(2) i {
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.nav-header {
+    background: #fafafa;
+}
+
+.nav-title {
+    background-image: linear-gradient(to right, #051937, #0f3654, #205470, #37758a, #5496a3);
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+.navbar-dark {
+    background-image: linear-gradient(to right, #051937, #0f3654, #205470, #37758a, #5496a3);
+}
+
+/*ADMIN PANEL*/
+.admin-container .row:first-child {
+    padding: 50px 0 50px 0;
+    font-size: 50px;
+    color: #051937;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.admin-container .row:last-child {
+    padding: 0 0 100px 0;
+}
+
+.admin-container .row {
+    background-image: linear-gradient(to right, #051937, #0f3654, #205470, #37758a, #5496a3);
+}
+
+.admin-container .row:last-child .col-xl-2 p {
+    font-size: 35px;
+    color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.admin-container .row:last-child .col-xl-2 p a:link {
+    font-size: 35px;
+    color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.admin-container .row:last-child .col-xl-2 p a:visited {
+    font-size: 35px;
+    color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.admin-container .row:last-child .col-xl-2 p a:hover {
+    font-size: 35px;
+    color: #051937;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.filler {
+    position: absolute;
+    top: 0;
+    margin-top: calc(45px + 343px);
+    height: calc(100vh - 45px - 143px - 200px);
+    width: 100%;
+    background-image: url('/images/bg-admin.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: -100;
+}
+
+/*INVOICE OVERVIEW*/
+.invoice-overview .row .col-2,
+.invoice-overview .row .col-1,
+.contacts-overview .row .col-sm-3 {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.invoice-overview .row:first-child,
+.contacts-overview .row:first-child {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #051937, #0f3654, #205470, #37758a, #5496a3);
+}
+
+.contacts-overview .row .col-sm-3 {
+    justify-content: center;
+}
+
+.contacts-overview .row .col-sm-3:last-child a:link {
+    color: #5496A3;
+}
+
+.contacts-overview .row .col-sm-3 a:visited {
+    color: #5496A3;
+}
+
+.contacts-overview .row .col-sm-3:nth-child(2) a:link,
+.contacts-overview .row .col-sm-3:nth-child(3) a:link {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.contacts-overview .row .col-sm-3 a:visited {
+    color: #5496A3;
+}
+
+.invoice-overview .row .col-sm-1 {
+    justify-content: center;
+}
+
+.invoice-overview .row .col-sm-1 .fa-check-circle {
+    color: green;
+}
+
+.invoice-overview .row .col-sm-1 .fa-times-circle {
+    color: red;
+}
+
+.invoice-overview .row .col-sm-1 .fa-pen-nib {
+    color: #5496A3;
+}
+
+.invoice-overview .row:first-child .col-sm-2:nth-child(4) {
+    display: grid;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*INVOICE OVERVIEW INCOMING-OUGOING*/
+
+.invoices-cards,
+.contact-card {
+    max-width: 800px !important;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+.invoices-cards .row:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoices-cards .row:nth-child(1) .col-sm-10 h1 {
+    text-transform: uppercase;
+}
+
+.invoices-cards .row:nth-child(1) .col-sm-2 {
+    font-size: 40px;
+}
+
+.invoices-cards .row:nth-child(2) .col-sm-12 {
+    font-style: italic;
+    color: #5496A3;
+    padding-bottom: 25px;
+}
+
+.invoices-cards .row:nth-child(3) {
+    padding-bottom: 10px;
+}
+
+.invoices-cards .row:nth-child(4),
+.invoices-cards .row:nth-child(5),
+.invoices-cards .row:nth-child(6) {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.invoices-cards .row:nth-child(6) {
+    padding-top: 10px;
+}
+
+.invoices-cards .row:first-child{
+    position: relative;
+}
+
+.edit-detail-invoice{
+    position: absolute;
+    right: -5px;;
+    top: -40px;
+    background: #205470;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+.amount{
+    color: #5496A3;
+}
+
+.contact-card .row {
+    min-height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contact-card .row .col-sm-2 {
+    font-size: 25px;
+    color: #5496A3;
+}
+
+.contact-card .row .col-sm-4 a:link,
+.google-map-link {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.contact-card .row .col-sm-4 a:visited,
+.google-map-link:visited {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.contact-card .row .col-sm-4 a:hover,
+.google-map-link:visited {
+    text-decoration: underline;
+    color: #000000;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    /* ...and now for the proper property */
+    transition: .5s;
+}
+
+.contact-card .row:last-child {
+    padding: 25px 0 10px 0;
+}
+
+.contact-card .row:last-child .col-sm-2:nth-child(2) a:link {
+    color: #5496A3;
+    font-size: 30px;
+}
+
+.contact-card .row:last-child .col-sm-2:nth-child(3) a:link {
+    color: red;
+    font-size: 30px;
+}
+
+.form-control-smaller,
+.form-control-special {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: solid 1px #051937;
+}
+
+.form-submit-smaller,
+.form-submit-special {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, .6);
+    color: #fafafa;
+}
+
+.form-control-special,
+.form-submit-special {
+    width: 100%;
+}
+
+/*CREATE AND EDIT FORM INVOICES*/
+
+.create-edit-form {
+    margin: 50px 0;
+}
+
+.create-edit-form .container .row .col-sm-2,
+.create-edit-form .container .row .col-sm-4,
+.create-edit-form .container .row .col-sm-10 {
+    display: grid;
+    align-items: center;
+}
+
+button[type="submit"] {
+    background-image: linear-gradient(to right, #051937, #0f3654, #205470, #37758a, #5496a3);
+    color: #ffffff;
+}
+
+.create-edit-form .container .row .col-sm-2 {
+    padding: 15px 0;
+}
+
+<<<<<<< HEAD
+/* RESULTS */
+.results-container .row {
+    padding-top: 50px;
+}
+
+.results-container .row .col-sm-5 {
+    font-size: 35px;
+    color: #5496a3;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.results-container .row .col-sm-5 a:link {
+    font-size: 20px;
+    color: #5496a3;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.results-container .row .col-sm-5 a:visited {
+    font-size: 20px;
+    color: #5496a3;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+.results-container .row .col-sm-5 a:hover {
+    font-size: 20px;
+    color: #051937;
+    text-decoration: none;
+}
+
+.container-year-result{
+    padding: 25px 0;
+}
+
+.container-year-result .row .col-sm-4 .select form p{
+    color: #5496a3;
+    margin: 0;
+    padding: 0;
+}
+
+.container-year-result .row .col-sm-4 .select form select{
+    text-align: center;
+}
+
+.container-year-result~.container{
+    width: 600px;
+    padding: 25px 0;
+    margin-top: 25px;
+    background-color: #051937;
+}
+
+.container-year-result~.container .row .col-sm-7,
+.container-year-result~.container .row .col-sm-3{
+    padding: 15px 0;
+} 
+
+.container-year-result~.container .row:last-child .col-sm-7,
+.container-year-result~.container .row:last-child .col-sm-3{
+    text-transform: uppercase;
+    color: #5496a3;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* PAGE HEADERS */
+@media only screen and (max-width: 980px) {
+.nav-title h1{
+    font-size: 30px;
+    }
+}
+
+/* ADMIN PAGE */
+@media only screen and (max-width: 1200px) {
+    .admin-container .row .col-md-6{
+        margin: 25px 0;
+    }
+
+    .admin-container .row:last-child .col-xl-2 p a:link{
+        font-size: 50px;
+    }
+}
+
+    @media only screen and (max-width: 980px) {
+        .invoice-overview{
+            font-size: 10px;
+        }
+
+        .invoice-overview .row:first-child{
+            letter-spacing: 0;
+        }
+    }
+
+    .invoice-overview .row .col-1:nth-child(6),
+    .invoice-overview .row .col-2:nth-child(4){
+        display: none!important;
+    }
+
+    .invoice-overview .row .col-2{
+        width: 22%!important;
+        max-width: 22%;
+        flex: 0 0 22%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .invoice-overview{
+            font-size: 8px;
+        }
+    }
+    @media only screen and (max-width: 450px) {
+    .invoices-cards .row:first-child .col-sm-12 h1{
+        font-size: 20px;
+    }
+}
+
+    @media only screen and (max-width: 576px) {
+        .create-edit-form .container .row .col-sm-2{
+            margin: 0 0 0 15px;
+        }
+    }
+
+    @media only screen and (max-width: 575px){
+        .contacts-overview .row:first-child{
+            display: none;
+        }
+    }
+
+    .create-contact .row{
+        padding: 10px;
+    }
+
+    
+    .container-year-result~.container{
+        width: 600px;
+        padding: 25px 0;
+        margin-top: 25px;
+        background-color: #051937;
+    }
+  
+    #result{
+        text-align: center;
+    }
+
+    #result ul li{
+        list-style-type: none;
+    }
+  
+=======
+button:disabled,
+button[disabled] {
+    background-image: linear-gradient(to right, #2b2d30, #424b52, #616d74, #738085, #99a6a8);
+    border: none;
+}
+
+button:hover:enabled {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    /* ...and now for the proper property */
+    transition: .5s;
+    -webkit-filter: saturate(4);
+    filter: saturate(4);
+}
+
+a i:hover {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    /* ...and now for the proper property */
+    transition: .5s;
+    color: #05193794 !important;
+}
+>>>>>>> aa86eb370deb3f3eac79710649adf6cda4df265a
